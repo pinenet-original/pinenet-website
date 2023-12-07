@@ -11,7 +11,7 @@ const page = () => {
           <div style={{ opacity: 1, transform: "none" }}>
             <h1>
               <span className="block font-display text-base font-semibold text-neutral-950">
-                Our work - Marius
+                Our work - Pinet Net
               </span>
               <span className="sr-only"> - </span>
               <span className="mt-6 block max-w-5xl font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
