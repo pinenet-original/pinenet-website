@@ -11,39 +11,30 @@ const Footer = ({ showNavigation }) => {
     >
       <div className="mx-auto max-w-2xl lg:max-w-none">
         <div style={{ opacity: 1, transform: "none" }}>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2 mb-20">
             <nav>
               <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
                 <li>
-                  <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+                  <div className="mb-4 font-display text-sm font-semibold tracking-wider text-neutral-950">
                     Work
                   </div>
-                  <ul role="list" className="mt-4 text-sm text-neutral-700">
-                    <li className="mt-4">
-                      <a
-                        className="transition hover:text-neutral-950"
-                        href="/work/family-fund"
-                      >
+                  <ul role="list" className="mb-4 text-sm text-neutral-700">
+                    <li className="mb-4">
+                      <a className="transition hover:text-neutral-950" href="/">
                         FamilyFund
                       </a>
                     </li>
-                    <li className="mt-4">
-                      <a
-                        className="transition hover:text-neutral-950"
-                        href="/work/unseal"
-                      >
+                    <li className="mb-4">
+                      <a className="transition hover:text-neutral-950" href="">
                         Unseal
                       </a>
                     </li>
-                    <li className="mt-4">
-                      <a
-                        className="transition hover:text-neutral-950"
-                        href="/work/phobia"
-                      >
+                    <li className="mb-4">
+                      <a className="transition hover:text-neutral-950" href="/">
                         Phobia
                       </a>
                     </li>
-                    <li className="mt-4">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="/work"
@@ -54,11 +45,11 @@ const Footer = ({ showNavigation }) => {
                   </ul>
                 </li>
                 <li>
-                  <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+                  <div className="mb-4 font-display text-sm font-semibold tracking-wider text-neutral-950">
                     Company
                   </div>
-                  <ul role="list" className="mt-4 text-sm text-neutral-700">
-                    <li className="mt-4">
+                  <ul role="list" className="mb-4 text-sm text-neutral-700">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="/about"
@@ -66,38 +57,29 @@ const Footer = ({ showNavigation }) => {
                         About
                       </a>
                     </li>
-                    <li className="mt-4">
-                      <a
-                        className="transition hover:text-neutral-950"
-                        href="/process"
-                      >
+                    <li className="mb-4">
+                      <a className="transition hover:text-neutral-950" href="/">
                         Process
                       </a>
                     </li>
-                    <li className="mt-4">
-                      <a
-                        className="transition hover:text-neutral-950"
-                        href="/blog"
-                      >
+                    <li className="mb-4">
+                      <a className="transition hover:text-neutral-950" href="/">
                         Blog
                       </a>
                     </li>
-                    <li className="mt-4">
-                      <a
-                        className="transition hover:text-neutral-950"
-                        href="/contact"
-                      >
+                    <li className="mb-4">
+                      <a className="transition hover:text-neutral-950" href="/">
                         Contact us
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+                  <div className="mb-4 font-display text-sm font-semibold tracking-wider text-neutral-950">
                     Connect
                   </div>
-                  <ul role="list" className="mt-4 text-sm text-neutral-700">
-                    <li className="mt-4">
+                  <ul role="list" className="mb-4 text-sm text-neutral-700">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="https://facebook.com"
@@ -105,7 +87,7 @@ const Footer = ({ showNavigation }) => {
                         Facebook
                       </a>
                     </li>
-                    <li className="mt-4">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="https://instagram.com"
@@ -113,7 +95,7 @@ const Footer = ({ showNavigation }) => {
                         Instagram
                       </a>
                     </li>
-                    <li className="mt-4">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="https://twitter.com"
@@ -121,7 +103,7 @@ const Footer = ({ showNavigation }) => {
                         Twitter
                       </a>
                     </li>
-                    <li className="mt-4">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="https://github.com"
@@ -129,7 +111,7 @@ const Footer = ({ showNavigation }) => {
                         GitHub
                       </a>
                     </li>
-                    <li className="mt-4">
+                    <li className="mb-4">
                       <a
                         className="transition hover:text-neutral-950"
                         href="https://dribbble.com"
@@ -143,14 +125,14 @@ const Footer = ({ showNavigation }) => {
             </nav>
             <div className="flex lg:justify-end">
               <form className="max-w-sm">
-                <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+                <h2 className="mb-4 font-display text-sm font-semibold tracking-wider text-neutral-950">
                   Sign up for our newsletter
                 </h2>
-                <p className="mt-4 text-sm text-neutral-700">
+                <p className="mb-4 text-sm text-neutral-700">
                   Subscribe to get the latest design news, articles, resources
                   and inspiration.
                 </p>
-                <div className="relative mt-6">
+                <div className="relative mb-6">
                   <input
                     type="email"
                     placeholder="Email address"
@@ -182,7 +164,7 @@ const Footer = ({ showNavigation }) => {
               </form>
             </div>
           </div>
-          <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+          <div className="mb-20 pt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 ">
             <Link href="/">
               <svg
                 viewBox="0 0 130 32"

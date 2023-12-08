@@ -184,35 +184,30 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-20 pb-20 max-sm:pb-10">
-        <div className="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-full lg:max-w-none">
-              <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
-                <figure className="mx-auto max-w-4xl">
-                  <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
-                    <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
-                      The team at Studio went above and beyond with our
-                      onboarding, even finding a way to access the user’s
-                      microphone without triggering one of those annoying
-                      permission dialogs.
-                    </p>
-                  </blockquote>
-                  <figcaption className="mt-10">
-                    <Image
-                      alt="Phobia"
-                      loading="lazy"
-                      width="184"
-                      height="36"
-                      decoding="async"
-                      data-nimg="1"
-                      style={{ color: "transparent" }}
-                      src="img/logo6.svg"
-                    />
-                  </figcaption>
-                </figure>
-              </AnimatedDiv>
+        <div className="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 px-6 lg:px-8">
+          <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
+            <div className="mx-auto max-w-4xl">
+              <blockquote className=" mb-10 relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+                <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
+                  The team at Studio went above and beyond with our onboarding,
+                  even finding a way to access the user’s microphone without
+                  triggering one of those annoying permission dialogs.
+                </p>
+              </blockquote>
+              <div>
+                <Image
+                  alt="Phobia"
+                  loading="lazy"
+                  width="184"
+                  height="36"
+                  decoding="async"
+                  data-nimg="1"
+                  style={{ color: "transparent" }}
+                  src="img/logo6.svg"
+                />
+              </div>
             </div>
-          </div>
+          </AnimatedDiv>
         </div>
       </section>
       <section className="pt-20 max-sm:pt-10 pb-20 max-sm:pb-10">
@@ -283,7 +278,7 @@ export default function Home() {
             >
               <li className="group mt-10 first:mt-0">
                 <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
-                  <div className="pt-10 group-first:pt-0">
+                  <div className="pt-10 group-first:pt-0 ">
                     <strong className="font-semibold text-neutral-950">
                       Web development.{" "}
                     </strong>

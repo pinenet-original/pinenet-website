@@ -1,5 +1,5 @@
 import React from "react";
-import CompaniesListData from "./data/ComapniesListData";
+import CompaniesListData from "../data/ComapniesListData";
 import AnimatedDiv from "./AnimatedDiv";
 import Image from "next/image";
 
@@ -24,7 +24,7 @@ const CompaniesList = () => {
               <li key={index}>
                 <AnimatedDiv
                   style={{ opacity: 1, transform: "none" }}
-                  delay={index * 0.1} // Adjust the delay as needed
+                  delay={index * 0.1}
                 >
                   <Image
                     alt={image.alt}

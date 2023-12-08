@@ -17,7 +17,7 @@ export const CompaniesListData = [
   },
   {
     alt: "Phobia",
-    src: "img/logo5.svg",
+    src: "img/logo6.svg",
   },
   {
     alt: "Phobia",
