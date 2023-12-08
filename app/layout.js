@@ -23,32 +23,15 @@ export default function RootLayout({ children }) {
           }}
         >
           <Navigation toggleManager={toggleManager} />
-          <div
-            className="relative flex flex-auto  bg-white pt-14"
+          <main
+            className="page-wrapper"
             style={{
-              borderTopLeftRadius: "40px",
-              borderTopRightRadius: "40px",
-              transform: "none",
-              transformOrigin: "50% 50% 0px",
-              position: "absolute",
-              top: showNavigation ? "780px" : "20px",
-              left: "0",
-              width: "100%",
-              transitionDuration: "500ms",
+              top: showNavigation ? "762px" : "20px",
             }}
           >
-            <div
-              className="relative isolate flex w-full flex-col pt-9"
-              style={{
-                transform: "none",
-                transformOrigin: "50% 50% 0px",
-                width: "100%",
-              }}
-            >
-              {children}
-            </div>
-          </div>
-          <Footer />
+            {children}
+          </main>
+          <Footer showNavigation={showNavigation} />
         </PageContext.Provider>
       </body>
     </html>

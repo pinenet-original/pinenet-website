@@ -27,9 +27,18 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   color: var(--text-main);
   background: var(--background-main);
+}
+
+
+.page-wrapper {
+  border-top-left-radius: 40px;
+  border-top-right-radius:  40px;
+  transition-duration: 500ms;
+  position: relative;
+  padding-top: 96px;
+  display: flex;
+  background-color: #fff;
+  padding-bottom: 20px;
 }

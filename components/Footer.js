@@ -1,9 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({ showNavigation }) => {
   return (
-    <footer className="mx-auto max-w-7xl px-6 lg:px-8 mt-24 w-full sm:mt-32 lg:mt-40 pb-2">
+    <footer
+      className="relative mx-auto max-w-7xl px-6 lg:px-8 w-full pb-2"
+      style={{
+        top: showNavigation ? "762px" : "0",
+      }}
+    >
       <div className="mx-auto max-w-2xl lg:max-w-none">
         <div style={{ opacity: 1, transform: "none" }}>
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">

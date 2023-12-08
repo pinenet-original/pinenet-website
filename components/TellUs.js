@@ -3,7 +3,7 @@ import AnimatedDiv from "./AnimatedDiv";
 
 const TellUs = () => {
   return (
-    <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-40 pb-40">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div className="mx-auto max-w-2xl lg:max-w-none">
         <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
           <div className="-mx-6 rounded-[40px] bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
