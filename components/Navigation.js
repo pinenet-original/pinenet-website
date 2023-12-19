@@ -157,7 +157,7 @@ const Navigation = ({ toggleManager }) => {
                   <h2 className="font-display text-base font-semibold text-white">
                     Follow us
                   </h2>
-                  <ul className="flex gap-x-10 text-white  mt-6 max-lg:flex-col max-sm:flex-row">
+                  <ul className="flex gap-x-10 text-white  mt-6 max-lg:flex-row max-sm:flex-row">
                     <li>
                       <Link href="/">
                         <FacebookIcon />
