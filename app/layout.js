@@ -25,7 +25,9 @@ export default function RootLayout({ children }) {
           <Navigation toggleManager={toggleManager} />
           <main
             className={`page-wrapper ${
-              showNavigation ? "top-[762px] max-sm:top-[1070px]" : "top-[20px]"
+              showNavigation
+                ? "top-[762px] max-sm:top-[1074px] max-sm:pb-[350px]"
+                : "top-[20px]"
             }`}
           >
             {children}
