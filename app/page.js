@@ -238,7 +238,7 @@ export default function Home() {
         </div>
         <div className="pt-16 flex max-lg:flex-col max-lg:items-center lg:gap-6 max-w-7xl mx-auto">
           <AnimatedDiv>
-            <div className="w-[33.75rem] max-sm:w-[30rem] flex-none xl:w-[45rem] relative left-[-100px] max-xl:left-[-40px] max-sm:left-[0px]">
+            <div className="w-[33.75rem] max-sm:w-[27rem] flex-none xl:w-[45rem] relative left-[-100px] max-xl:left-[-40px] max-sm:left-[0px]">
               <div className="justify-center lg:justify-end relative flex aspect-[719/680] w-full  grayscale">
                 <svg viewBox="0 0 655 680" fill="none" className="h-full">
                   <g clipPath="url(#:S1:-clip)" className="group">

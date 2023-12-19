@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import { PageContext } from "@/app/layout";
 import Link from "next/link";
 import { Logo } from "./logo";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Navigation = ({ toggleManager }) => {
   const { showNavigation } = useContext(PageContext);
@@ -154,10 +157,22 @@ const Navigation = ({ toggleManager }) => {
                   <h2 className="font-display text-base font-semibold text-white">
                     Follow us
                   </h2>
-                  <ul className="flex gap-x-10 text-white mt-6 max-lg:flex-col">
-                    <li>FaceBook</li>
-                    <li>Twiter</li>
-                    <li>Telegram</li>
+                  <ul className="flex gap-x-10 text-white  mt-6 max-lg:flex-row max-sm:flex-row">
+                    <li>
+                      <Link href="/">
+                        <FacebookIcon />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <TwitterIcon />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/">
+                        <TelegramIcon />
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
