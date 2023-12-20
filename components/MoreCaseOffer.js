@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import AnimatedDiv from "./AnimatedDiv";
+import { recomendedStories } from "@/data/storiesData";
 
-const MoreCaseOffer = ({ recomendedStories }) => {
+const MoreCaseOffer = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">

@@ -162,3 +162,7 @@ export const combinedStoriesData = [
   mariusStoriesData,
   gogaStoriesData,
 ];
+
+export const recomendedStories = combinedStoriesData.filter(
+  (story) => story.recomended === true
+);

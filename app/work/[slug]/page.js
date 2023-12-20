@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import { combinedStoriesData } from "@/data/storiesData";
-import { recomendedStories } from "@/utils/helpers";
+import { combinedStoriesData, recomendedStories } from "@/data/storiesData";
 import { StorieRender } from "@/components/StorieRender";
 import TellUs from "@/components/TellUs";
 import MoreCaseOffer from "@/components/MoreCaseOffer";
@@ -10,7 +9,7 @@ import MoreCaseOffer from "@/components/MoreCaseOffer";
 export const page = ({ params }) => {
   const filteredStoriesData = combinedStoriesData.filter(
     (story) => story.id === params.slug
-  );
+  )[0];
 
   return (
     <div className="w-full flex-auto">
