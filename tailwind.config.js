@@ -13,6 +13,13 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
     },
+    typography: {
+      article: {
+        fontSize: "20px",
+        lineHeight: "32px",
+        color: "#000",
+      },
+    },
     fontSize: {
       sm: "12.8px",
       base: "16px",
