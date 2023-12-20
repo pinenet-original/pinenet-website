@@ -36,7 +36,7 @@ export const PreviewStorieRender = ({ storiesData }) => {
             </div>
             <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
               <p className="font-display text-4xl font-medium text-neutral-950 mb-6">
-                <Link href={preview.link}>{preview.subtitle}</Link>
+                <Link href={`/work/${preview.link}`}>{preview.subtitle}</Link>
               </p>
               <div className="space-y-6 text-base text-neutral-600 mb-8">
                 {preview.previewText.map((text, index) => (
@@ -47,7 +47,7 @@ export const PreviewStorieRender = ({ storiesData }) => {
                 <Link
                   className="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800"
                   aria-label="Read case study: FamilyFund"
-                  href={preview.link}
+                  href={`/work/${preview.link}`}
                 >
                   <span className="relative top-px">Read case study</span>
                 </Link>

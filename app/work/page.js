@@ -2,12 +2,13 @@
 import React from "react";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
-import Link from "next/link";
 import TellUs from "@/components/TellUs";
 import CompaniesListData from "@/data/ComapniesListData";
-import { dimaStoriesData } from "@/data/storiesData";
-import { mariusStoriesData } from "@/data/storiesData";
-import { gogaStoriesData } from "@/data/storiesData";
+import {
+  dimaStoriesData,
+  mariusStoriesData,
+  gogaStoriesData,
+} from "@/data/storiesData";
 
 import PrieviewStoriesRender from "@/components/PreviewStoriesRender";
 

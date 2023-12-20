@@ -1,5 +1,6 @@
 export const dimaStoriesData = [
   {
+    id: "mygo-tech",
     recomended: false,
     title: "Dima work",
     subtitle: "Skip the bank, borrow from those you trust",
@@ -9,7 +10,7 @@ export const dimaStoriesData = [
     year: "2023",
     month: "January 2023",
     service: "Web development, CMS",
-    link: "/work/migo-tech",
+    link: "mygo-tech",
     icon: "/img/logomark-dark.4d2947be.svg",
     projectImage:
       "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.3cc9a6af.jpg&w=828&q=90",
@@ -54,6 +55,7 @@ export const dimaStoriesData = [
 
 export const mariusStoriesData = [
   {
+    id: "ltl-union",
     recomended: true,
     title: "Marius work",
     subtitle: "Skip the bank, borrow from those you trust",
@@ -63,7 +65,7 @@ export const mariusStoriesData = [
     year: "2023",
     month: "January 2023",
     service: "Web development, CMS",
-    link: "/work/ltl-union",
+    link: "ltl-union",
     icon: "/img/logomark-dark.4d2947be.svg",
     projectImage:
       "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.3cc9a6af.jpg&w=828&q=90",
@@ -108,6 +110,7 @@ export const mariusStoriesData = [
 
 export const gogaStoriesData = [
   {
+    id: "goga",
     recomended: true,
     title: "Goga's work",
     subtitle: "Goga is the best worker in industry !",
@@ -117,7 +120,7 @@ export const gogaStoriesData = [
     year: "2023",
     month: "January 2023",
     service: "Web development, CMS",
-    link: "/work/goga",
+    link: "goga",
     icon: "/img/logomark-dark.4d2947be.svg",
     projectImage:
       "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.3cc9a6af.jpg&w=828&q=90",
@@ -158,4 +161,10 @@ export const gogaStoriesData = [
       },
     ],
   },
+];
+
+export const combinedStoriesData = [
+  ...dimaStoriesData,
+  ...mariusStoriesData,
+  ...gogaStoriesData,
 ];

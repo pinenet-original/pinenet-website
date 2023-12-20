@@ -1,16 +1,20 @@
 "use client";
 
 import React from "react";
-import { dimaStoriesData } from "@/data/storiesData";
+import { combinedStoriesData } from "@/data/storiesData";
+import { recomendedStories } from "@/utils/helpers";
 import { StorieRender } from "@/components/StorieRender";
 import TellUs from "@/components/TellUs";
 import MoreCaseOffer from "@/components/MoreCaseOffer";
-import { recomendedStories } from "@/utils/helpers";
 
-export const MigoTech = () => {
+export const page = ({ params }) => {
+  const filteredStoriesData = combinedStoriesData.filter(
+    (story) => story.id === params.slug
+  );
+
   return (
     <div className="w-full flex-auto">
-      <StorieRender storiesData={dimaStoriesData} />
+      <StorieRender storiesData={filteredStoriesData} />
       <section className="relative pt-24 sm:pt-32 lg:pt-40 bg-gray-100 pb-12 ">
         <MoreCaseOffer recomendedStories={recomendedStories} />
       </section>
@@ -21,4 +25,4 @@ export const MigoTech = () => {
   );
 };
 
-export default MigoTech;
+export default page;
