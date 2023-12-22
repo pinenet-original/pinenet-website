@@ -5,8 +5,8 @@ import Image from "next/image";
 const ImageClip = ({ ImageLink }) => {
   return (
     <AnimatedDiv>
-      <div className="w-[33.75rem] max-sm:w-[27rem] flex-none xl:w-[45rem] relative  max-xl:left-[-40px] max-sm:left-[0px]">
-        <div className="justify-center lg:justify-end relative flex aspect-[719/680] w-full  grayscale">
+      <div className="w-[33.75rem] flex-none lg:w-[40rem]  relative  max-xl:left-[-40px] max-sm:left-[0px]">
+        <div className="justify-center lg:justify-start relative flex aspect-[719/680] w-full  grayscale">
           <svg viewBox="0 0 655 680" fill="none" className="h-full">
             <g clipPath="url(#:S1:-clip)" className="group">
               <g className="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
