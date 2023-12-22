@@ -22,7 +22,7 @@ const Navigation = ({ toggleManager }) => {
           transformOrigin: "50% 50% 0px",
         }}
       >
-        <div className=" bg-neutral-950 pb-16 pt-14 w-full ">
+        <div className=" bg-neutral-950 pb-16 pt-14 max-w-full ">
           <div className=" mx-auto max-w-7xl px-6 lg:px-8 ">
             <div className=" mx-auto max-w-full w-full lg:max-w-none ">
               <div className=" flex items-center justify-between ">
