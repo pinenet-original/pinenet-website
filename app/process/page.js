@@ -43,7 +43,7 @@ const page = () => {
         <div className="mx-auto max-w-7xl lg:max-w-none">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="mb-24 flex max-lg:flex-col max-lg:items-center lg:gap-8 max-w-7xl mx-auto">
-              <div className="translate-x-[-50px]">
+              <div>
                 <ImageClip ImageLink={ImageLink2} />
               </div>
               <div className="px-5 lg:w-[40rem]">
@@ -112,8 +112,8 @@ const page = () => {
                 </AnimatedDiv>
               </div>
             </div>
-            <div className="mb-24 flex max-lg:flex-col max-lg:items-center lg:gap-6 max-w-7xl mx-auto">
-              <div className="order-2 max-lg-order-1 translate-x-[50px]">
+            <div className="mb-24 flex max-lg:flex-col max-lg:items-center lg:gap-8 max-w-7xl mx-auto">
+              <div className="order-2 max-lg-order-1">
                 <ImageClip ImageLink={ImageLink} />
               </div>
               <div className="px-5 order-1 max-lg:order-2">
