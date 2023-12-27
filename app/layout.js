@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SmoothScrolling from "@/components/SmoothScrolling";
 
 const inter = Inter({ subsets: ["latin"] });
 export const PageContext = createContext({});
@@ -17,23 +18,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PageContext.Provider
-          value={{
-            showNavigation,
-          }}
-        >
-          <Navigation toggleManager={toggleManager} />
-          <main
-            className={`page-wrapper ${
-              showNavigation
-                ? "top-[762px] max-sm:top-[1074px] max-sm:pb-[350px]"
-                : "top-[20px]"
-            }`}
+        <SmoothScrolling>
+          <PageContext.Provider
+            value={{
+              showNavigation,
+            }}
           >
-            {children}
-          </main>
-          <Footer showNavigation={showNavigation} />
-        </PageContext.Provider>
+            <Navigation toggleManager={toggleManager} />
+            <main
+              className={`page-wrapper ${
+                showNavigation
+                  ? "top-[762px] max-sm:top-[1074px] max-sm:pb-[350px]"
+                  : "top-[20px]"
+              }`}
+            >
+              {children}
+            </main>
+            <Footer showNavigation={showNavigation} />
+          </PageContext.Provider>
+        </SmoothScrolling>
       </body>
     </html>
   );
