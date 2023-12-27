@@ -202,9 +202,7 @@ const Footer = ({ showNavigation }) => {
                 ></path>
               </svg>
             </Link>
-            <p className="text-sm text-neutral-700">
-              © Studio Agency Inc. 2023
-            </p>
+            <p className="text-sm text-neutral-700">© PineNet 2023</p>
           </div>
         </div>
       </div>

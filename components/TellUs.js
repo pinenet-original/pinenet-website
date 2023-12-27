@@ -1,5 +1,6 @@
 import React from "react";
 import AnimatedDiv from "./AnimatedDiv";
+import Link from "next/link";
 
 const TellUs = () => {
   return (
@@ -13,12 +14,12 @@ const TellUs = () => {
                   Tell us about your project
                 </h2>
                 <div className="mb-10 flex">
-                  <a
+                  <Link
                     className="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-white text-neutral-950 hover:bg-neutral-200"
                     href="/contact"
                   >
                     <span className="relative top-px">Say Hej</span>
-                  </a>
+                  </Link>
                 </div>
                 <div className=" border-t border-white/10 pt-10">
                   <h3 className="mb-6 font-display text-base font-semibold text-white">
@@ -30,20 +31,11 @@ const TellUs = () => {
                   >
                     <li>
                       <address className="text-sm not-italic text-neutral-300">
-                        <strong className="text-white">Copenhagen</strong>
+                        <strong className="text-white">Lithuania</strong>
                         <br />
-                        1 Carlsberg Gate
+                        16 Veteranu
                         <br />
-                        1260, København, Denmark
-                      </address>
-                    </li>
-                    <li>
-                      <address className="text-sm not-italic text-neutral-300">
-                        <strong className="text-white">Copenhagen</strong>
-                        <br />
-                        1 Carlsberg Gate
-                        <br />
-                        1260, København, Denmark
+                        1313, Visaginas, Lithuania
                       </address>
                     </li>
                   </ul>
