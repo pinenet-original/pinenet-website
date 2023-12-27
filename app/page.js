@@ -1,15 +1,18 @@
 "use client";
-import React, { useContext } from "react";
-import { PageContext } from "./layout";
-import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import TellUs from "@/components/TellUs";
 import CompaniesList from "@/components/CompaniesList";
+import Card from "@/components/Card";
+import {
+  dimaStoriesData,
+  mariusStoriesData,
+  gogaStoriesData,
+} from "@/data/storiesData";
 import ImageClip from "@/components/ImageClip";
 
 export default function Home() {
-  const { animationStyle } = useContext(PageContext);
   const ImageLink =
     "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flaptop.22dcb094.jpg&w=750&q=75";
 
@@ -59,129 +62,9 @@ export default function Home() {
               </AnimatedDiv>
             </div>
             <div className="grid max-sm:grid-cols-1 gap-8 grid-cols-3">
-              <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
-                <div className="flex">
-                  <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                    <h3>
-                      <Link href="/">
-                        <span className="absolute inset-0 rounded-3xl"></span>
-                        <Image
-                          alt="FamilyFund"
-                          loading="lazy"
-                          width="36"
-                          height="36"
-                          decoding="async"
-                          data-nimg="1"
-                          className="h-16 w-16"
-                          style={{ color: "transparent" }}
-                          src="img/logomark-dark.4d2947be.svg"
-                        ></Image>
-                      </Link>
-                    </h3>
-                    <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                      <time dateTime="2023" className="font-semibold">
-                        2023
-                      </time>
-                      <span className="text-neutral-300" aria-hidden="true">
-                        /
-                      </span>
-                      <span>Case study</span>
-                    </p>
-                    <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                      Skip the bank, borrow from those you trust
-                    </p>
-                    <p className="mt-4 text-base text-neutral-600">
-                      FamilyFund is a crowdfunding platform for friends and
-                      family. Allowing users to take personal loans from their
-                      network without a traditional financial institution.
-                    </p>
-                  </article>
-                </div>
-              </AnimatedDiv>
-              <AnimatedDiv
-                style={{ opacity: 1, transform: "none" }}
-                delay={0.2}
-              >
-                <div className="flex">
-                  <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                    <h3>
-                      <Link href="/">
-                        <span className="absolute inset-0 rounded-3xl"></span>
-                        <Image
-                          alt="FamilyFund"
-                          loading="lazy"
-                          width="36"
-                          height="36"
-                          decoding="async"
-                          data-nimg="1"
-                          className="h-16 w-16"
-                          style={{ color: "transparent" }}
-                          src="img/logomark-dark.4d2947be.svg"
-                        ></Image>
-                      </Link>
-                    </h3>
-                    <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                      <time dateTime="2023" className="font-semibold">
-                        2023
-                      </time>
-                      <span className="text-neutral-300" aria-hidden="true">
-                        /
-                      </span>
-                      <span>Case study</span>
-                    </p>
-                    <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                      Skip the bank, borrow from those you trust
-                    </p>
-                    <p className="mt-4 text-base text-neutral-600">
-                      FamilyFund is a crowdfunding platform for friends and
-                      family. Allowing users to take personal loans from their
-                      network without a traditional financial institution.
-                    </p>
-                  </article>
-                </div>
-              </AnimatedDiv>
-              <AnimatedDiv
-                style={{ opacity: 1, transform: "none" }}
-                delay={0.4}
-              >
-                <div className="flex">
-                  <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                    <h3>
-                      <Link href="/">
-                        <span className="absolute inset-0 rounded-3xl"></span>
-                        <Image
-                          alt="FamilyFund"
-                          loading="lazy"
-                          width="36"
-                          height="36"
-                          decoding="async"
-                          data-nimg="1"
-                          className="h-16 w-16"
-                          style={{ color: "transparent" }}
-                          src="img/logomark-dark.4d2947be.svg"
-                        ></Image>
-                      </Link>
-                    </h3>
-                    <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                      <time dateTime="2023" className="font-semibold">
-                        2023
-                      </time>
-                      <span className="text-neutral-300" aria-hidden="true">
-                        /
-                      </span>
-                      <span>Case study</span>
-                    </p>
-                    <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                      Skip the bank, borrow from those you trust
-                    </p>
-                    <p className="mt-4 text-base text-neutral-600">
-                      FamilyFund is a crowdfunding platform for friends and
-                      family. Allowing users to take personal loans from their
-                      network without a traditional financial institution.
-                    </p>
-                  </article>
-                </div>
-              </AnimatedDiv>
+              <Card storiesData={dimaStoriesData} />
+              <Card storiesData={mariusStoriesData} />
+              <Card storiesData={gogaStoriesData} />
             </div>
           </div>
         </div>
