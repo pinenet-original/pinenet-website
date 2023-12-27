@@ -1,4 +1,7 @@
 export const Logo = ({ opened }) => {
+  const logoStyle = {
+    transition: opened ? "fill 0.2s ease-in-out" : "fill 0.6s ease-in-out",
+  };
   return (
     <svg
       width="195.054"
@@ -14,6 +17,7 @@ export const Logo = ({ opened }) => {
         stroke="#000000"
         strokeWidth="0.25mm"
         fill={opened ? "#FFFFFF" : "#000000"}
+        style={logoStyle}
       >
         <path
           d="M 56.434 37.817 L 56.434 19.953 A 8.802 8.802 0 0 0 56.374 18.885 Q 56.195 17.422 
