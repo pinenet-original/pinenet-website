@@ -27,7 +27,7 @@ export const dimaStoriesData = {
   testimonial: {
     text: "Working with Studio, we felt more like a partner than a customer. They really resonated with our mission to change the way people convince their parents to cash out their pensions.",
     photo:
-      "https://scontent.fvno5-1.fna.fbcdn.net/v/t39.30808-6/278567800_189972243356037_2621549533813883442_n.jpg?stp=dst-jpg_p600x600&_nc_cat=110&ccb=1-7&_nc_sid=3635dc&_nc_ohc=go5_KltMptEAX_P6L8Q&_nc_ht=scontent.fvno5-1.fna&oh=00_AfAsfchjRK6UNnq7JD__BhJbXl5PYAmmWvOJlhzGRFVnuA&oe=6581D660",
+      "https://scontent.fvno5-1.fna.fbcdn.net/v/t39.30808-6/220181824_115716997448229_6940621430399599376_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=pvGF5_1rY6kAX8nBF4u&_nc_ht=scontent.fvno5-1.fna&oh=00_AfAo4a1reW32HqMq4wdMbzOuBD3Y7gV-IHC8ya04FGj5YQ&oe=65909354",
     name: "Dima Panasiuk",
     position: "CEO of PinetNet",
   },
@@ -82,7 +82,7 @@ export const mariusStoriesData = {
     photo:
       "https://scontent.fvno5-1.fna.fbcdn.net/v/t31.18172-8/288653_253126238049909_4313524_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=b9145c&_nc_ohc=AFYYtQisj6sAX_BfdF4&_nc_ht=scontent.fvno5-1.fna&oh=00_AfDAkdN90W13qoVccHpwx-dt4bqc_msGovEE3mGsyWb08Q&oe=65A377E8",
     name: "Marius Dainys",
-    position: "CEO of PinetNet",
+    position: "Worker of PinetNet",
   },
   superPowers: [
     {
@@ -135,7 +135,7 @@ export const gogaStoriesData = {
     photo:
       "https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kkZiaB9Q-GbY5gjf6WWURzEpLzNrpjZp_tn09GB21bI=",
     name: "Goga Kuzia",
-    position: "CEO of PinetNet",
+    position: "Worker of PinetNet",
   },
   superPowers: [
     {
