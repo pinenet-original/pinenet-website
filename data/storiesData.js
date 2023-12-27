@@ -27,7 +27,7 @@ export const dimaStoriesData = {
   testimonial: {
     text: "Working with Studio, we felt more like a partner than a customer. They really resonated with our mission to change the way people convince their parents to cash out their pensions.",
     photo:
-      "https://scontent.fvno5-1.fna.fbcdn.net/v/t39.30808-6/220181824_115716997448229_6940621430399599376_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=jPf_xUtksbUAX9lihos&_nc_oc=AQmXUMRb8akfyncs3XkipXcWjrhVb4MGwYnAu9KhisYzjLEV-5ShqYQ-NA82Cr7NaIc&_nc_ht=scontent.fvno5-1.fna&oh=00_AfDhUu_ASzCPIh3DXp2wImaUCcJZIoG8NRFdssFr2yhC5g&oe=658AA494",
+      "https://scontent.fvno5-1.fna.fbcdn.net/v/t39.30808-6/220181824_115716997448229_6940621430399599376_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=pvGF5_1rY6kAX8nBF4u&_nc_ht=scontent.fvno5-1.fna&oh=00_AfAo4a1reW32HqMq4wdMbzOuBD3Y7gV-IHC8ya04FGj5YQ&oe=65909354",
     name: "Dima Panasiuk",
     position: "CEO of PinetNet",
   },
