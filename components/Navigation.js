@@ -145,10 +145,8 @@ const Navigation = ({ toggleManager }) => {
                     <li>
                       <address className="text-sm not-italic text-neutral-300">
                         <strong className="text-white">Lithuania</strong>
-                        <br />
-                        'Visaginas'
-                        <br />
-                        'Streets and number'
+                        <br /> &quot;Visaginas&quot;
+                        <br /> &quot;Streets and number&quot;
                       </address>
                     </li>
                   </ul>
