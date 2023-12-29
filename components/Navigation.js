@@ -38,14 +38,14 @@ const Navigation = ({ toggleManager }) => {
                 </Link>
                 <div className=" flex items-center gap-x-8 ">
                   <Link
-                    href="/"
+                    href="/contact"
                     className={`inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition ${
                       showNavigation
                         ? "bg-neutral-100  hover:bg-neutral-800 duration-500"
                         : "bg-neutral-950  hover:bg-neutral-800 duration-[900ms]"
                     }  ${showNavigation ? "text-black" : "text-white"} z-50`}
                   >
-                    Contact
+                    Contact Us
                   </Link>
                   <button
                     type="button"
@@ -119,10 +119,10 @@ const Navigation = ({ toggleManager }) => {
                   </Link>
                   <Link
                     onClick={() => toggleManager()}
-                    href="/contact"
+                    href="/blog"
                     className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
                   >
-                    Contact
+                    Blog
                     <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100"></span>
                   </Link>
                 </div>
