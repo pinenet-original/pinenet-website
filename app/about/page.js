@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import AnimatedDiv from "@/components/AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import Image from "next/image";
 import TellUs from "@/components/TellUs";
 import MoreCaseOffer from "@/components/MoreCaseOffer";
@@ -11,7 +11,7 @@ const page = () => {
       <section className="pb-12 xl:pb-24  max-sm:pb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-114 md:pt-26">
           <div className="mx-auto max-w-full lg:max-w-none">
-            <AnimatedDiv>
+            <FadeIn transitionDelay={0} animationSpeed={0.5}>
               <span className="block font-display text-base font-semibold text-neutral-950 mb-6">
                 About us
               </span>
@@ -41,33 +41,33 @@ const page = () => {
                   </p>
                 </div>
               </div>
-            </AnimatedDiv>
+            </FadeIn>
             <div className="!max-w-none">
               <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
-                <AnimatedDiv>
+                <FadeIn transitionDelay={0} animationSpeed={0.5}>
                   <div className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <span className="text-sm text-neutral-600">title</span>
                     <span className="text-3xl font-semibold text-neutral-950 sm:text-4xl">
                       24%
                     </span>
                   </div>
-                </AnimatedDiv>
-                <AnimatedDiv delay={0.1}>
+                </FadeIn>
+                <FadeIn transitionDelay={0.1} animationSpeed={0.5}>
                   <div className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <span className="text-sm text-neutral-600">title</span>
                     <span className="text-3xl font-semibold text-neutral-950 sm:text-4xl">
                       24%
                     </span>
                   </div>
-                </AnimatedDiv>
-                <AnimatedDiv delay={0.2}>
+                </FadeIn>
+                <FadeIn transitionDelay={0.2} animationSpeed={0.5}>
                   <div className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <span className="text-sm text-neutral-600">title</span>
                     <span className="text-3xl font-semibold text-neutral-950 sm:text-4xl">
                       24%
                     </span>
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ const page = () => {
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <ul className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 <li className="text-base text-neutral-300 before:bg-white after:bg-white/10">
-                  <AnimatedDiv>
+                  <FadeIn transitionDelay={0} animationSpeed={0.5}>
                     <div className="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                       <strong className="font-semibold text-white">
                         Loyalty.
@@ -102,10 +102,10 @@ const page = () => {
                       Our team has been with us since the beginning because none
                       of them are allowed to have LinkedIn profiles.
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
                 <li className="text-base text-neutral-300 before:bg-white after:bg-white/10">
-                  <AnimatedDiv delay={0.1}>
+                  <FadeIn transitionDelay={0.1} animationSpeed={0.5}>
                     <div className="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                       <strong className="font-semibold text-white">
                         Trust.
@@ -113,10 +113,10 @@ const page = () => {
                       We don’t care when our team works just as long as they are
                       working every waking second.
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
                 <li className="text-base text-neutral-300 before:bg-white after:bg-white/10">
-                  <AnimatedDiv delay={0.2}>
+                  <FadeIn transitionDelay={0.2} animationSpeed={0.5}>
                     <div className="pl-8 relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                       <strong className="font-semibold text-white">
                         Compassion.
@@ -124,7 +124,7 @@ const page = () => {
                       You never know what someone is going through at home and
                       we make sure to never find out.
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
               </ul>
             </div>
@@ -135,15 +135,15 @@ const page = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-12">
           <div className="mb-16 grid grid-cols-3 gap-x-8 gap-y-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"></div>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-4 xl:gap-8">
-            <AnimatedDiv>
+            <FadeIn transitionDelay={0} animationSpeed={0.5}>
               <h2 className="font-display text-2xl font-semibold text-neutral-950">
                 Leadership
               </h2>
-            </AnimatedDiv>
+            </FadeIn>
             <div className="lg:col-span-3">
               <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
                 <li>
-                  <AnimatedDiv delay={0.2}>
+                  <FadeIn transitionDelay={0.2} animationSpeed={0.5}>
                     <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                       <Image
                         className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
@@ -159,7 +159,7 @@ const page = () => {
                         <p className=" text-sm text-white">Founder / CEO</p>
                       </div>
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
               </ul>
             </div>
@@ -168,15 +168,15 @@ const page = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-16 grid grid-cols-3 gap-x-8 gap-y-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"></div>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-4 xl:gap-8">
-            <AnimatedDiv>
+            <FadeIn transitionDelay={0} animationSpeed={0.5}>
               <h2 className="font-display text-2xl font-semibold text-neutral-950">
                 Team
               </h2>
-            </AnimatedDiv>
+            </FadeIn>
             <div className="lg:col-span-3">
               <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
                 <li>
-                  <AnimatedDiv delay={0.2}>
+                  <FadeIn transitionDelay={0.2} animationSpeed={0.5}>
                     <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                       <Image
                         className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
@@ -192,10 +192,10 @@ const page = () => {
                         <p className=" text-sm text-white">Senior Developer</p>
                       </div>
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
                 <li>
-                  <AnimatedDiv delay={0.4}>
+                  <FadeIn transitionDelay={0.4} animationSpeed={0.5}>
                     <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                       <Image
                         className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
@@ -213,10 +213,10 @@ const page = () => {
                         </p>
                       </div>
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
                 <li>
-                  <AnimatedDiv delay={0.6}>
+                  <FadeIn transitionDelay={0.6} animationSpeed={0.5}>
                     <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                       <Image
                         className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
@@ -234,7 +234,7 @@ const page = () => {
                         </p>
                       </div>
                     </div>
-                  </AnimatedDiv>
+                  </FadeIn>
                 </li>
               </ul>
             </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import AnimatedDiv from "@/components/AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import Image from "next/image";
 
 const ImageClip = ({ ImageLink }) => {
   return (
-    <AnimatedDiv>
+    <FadeIn transitionDelay={0} animationSpeed={0.5}>
       <div className="max-xsm:w-[22.75rem]  max-sm:w-[25.75rem] w-[33.75rem] flex-none lg:w-[40rem]  relative  max-xl:left-[-40px] max-sm:left-[0px]">
         <div className="justify-center lg:justify-start relative flex aspect-[719/680] w-full  grayscale">
           <svg viewBox="0 0 655 680" fill="none" className="h-full">
@@ -35,7 +35,7 @@ const ImageClip = ({ ImageLink }) => {
           </svg>
         </div>
       </div>
-    </AnimatedDiv>
+    </FadeIn>
   );
 };
 
