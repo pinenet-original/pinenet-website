@@ -1,10 +1,10 @@
 import React from "react";
-import AnimatedDiv from "./AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import Link from "next/link";
 
 const BlogPreview = ({ blogData }) => {
   return (
-    <AnimatedDiv>
+    <FadeIn transitionDelay={0} animationSpeed={0.5}>
       <div className="pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"></div>
       <div className="relative lg:-mx-4 lg:flex lg:justify-end">
         <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
@@ -40,7 +40,7 @@ const BlogPreview = ({ blogData }) => {
           </Link>
         </div>
       </div>
-    </AnimatedDiv>
+    </FadeIn>
   );
 };
 

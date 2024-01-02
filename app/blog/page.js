@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import AnimatedDiv from "@/components/AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import BlogPreview from "@/components/BlogPreview";
 import TellUs from "@/components/TellUs";
 import { futureOfWeb, dailyTask } from "@/data/blogData";
@@ -13,7 +13,7 @@ const page = () => {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-114 md:pt-26">
             <div className="mx-auto max-w-full lg:max-w-none">
-              <AnimatedDiv>
+              <FadeIn transitionDelay={0} animationSpeed={0.5}>
                 <div>
                   <span className="block font-display text-base font-semibold text-neutral-950 mb-6">
                     Blog
@@ -29,7 +29,7 @@ const page = () => {
                     articles.
                   </p>
                 </div>
-              </AnimatedDiv>
+              </FadeIn>
             </div>
           </div>
         </div>
