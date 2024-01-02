@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import { PageContext } from "@/app/layout";
 import Link from "next/link";
@@ -8,6 +9,14 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Navigation = ({ toggleManager }) => {
   const { showNavigation } = useContext(PageContext);
+
+  const toggleNavigation = () => {
+    if (showNavigation) {
+      toggleManager();
+    } else {
+      return;
+    }
+  };
 
   return (
     <header
@@ -34,7 +43,7 @@ const Navigation = ({ toggleManager }) => {
                       ? "text-black duration-[900ms]"
                       : "text-white"
                   } z-50`}
-                  onClick={() => toggleManager()}
+                  onClick={() => toggleNavigation()}
                 >
                   <Logo opened={showNavigation} />
                 </Link>
@@ -46,6 +55,7 @@ const Navigation = ({ toggleManager }) => {
                         ? "bg-neutral-100  hover:bg-neutral-800 duration-500"
                         : "bg-neutral-950  hover:bg-neutral-800 duration-[900ms]"
                     }  ${showNavigation ? "text-black" : "text-white"} z-50`}
+                    onClick={() => toggleNavigation()}
                   >
                     Contact Us
                   </Link>
