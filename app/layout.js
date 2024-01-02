@@ -1,12 +1,17 @@
 "use client";
 import React, { createContext, useState } from "react";
 import { Inter } from "next/font/google";
+import localFont from "@next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SmoothScrolling from "@/components/SmoothScrolling";
 
 const inter = Inter({ subsets: ["latin"] });
+const MonaSans = localFont({
+  src: "../fonts/Mona/Mona-Sans.woff2",
+  display: "swap",
+});
 export const PageContext = createContext({});
 
 export default function RootLayout({ children }) {
@@ -17,7 +22,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={MonaSans.className}>
         <SmoothScrolling>
           <PageContext.Provider
             value={{

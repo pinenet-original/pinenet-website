@@ -10,7 +10,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 const page = () => {
   return (
     <div className="w-full flex-auto">
-      <section className="pb-12 xl:pb-2  max-sm:pb-8">
+      <section className="pb-12 xl:pb-2  max-sm:pb-8 pt-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
           <div className="mx-auto max-w-full lg:max-w-none">
             <FadeIn transitionDelay={0} animationSpeed={0.5}>

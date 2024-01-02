@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { FadeIn } from "../utils/animations";
-import { recomendedStories } from "@/data/storiesData";
+import AnimatedDiv from "./AnimatedDiv";
+import { recomendedBlog } from "@/data/blogData";
 
-const MoreCaseOffer = () => {
+const MoreBlogOffer = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
@@ -14,8 +14,8 @@ const MoreCaseOffer = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-            {recomendedStories.map((story, index) => (
-              <FadeIn transitionDelay={0} animationSpeed={0.5} key={index}>
+            {recomendedBlog.map((story, index) => (
+              <AnimatedDiv key={index}>
                 <div className="relative flex flex-col items-start pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                   <h3 className="mt-6 text-base font-semibold text-neutral-950">
                     {story.title}
@@ -30,7 +30,7 @@ const MoreCaseOffer = () => {
                     {story.previewText[0]}
                   </p>
                   <Link
-                    href={story.link}
+                    href={`/${story.link}`}
                     className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
                   >
                     Read more
@@ -47,7 +47,7 @@ const MoreCaseOffer = () => {
                     </svg>
                   </Link>
                 </div>
-              </FadeIn>
+              </AnimatedDiv>
             ))}
           </div>
         </div>
@@ -56,4 +56,4 @@ const MoreCaseOffer = () => {
   );
 };
 
-export default MoreCaseOffer;
+export default MoreBlogOffer;

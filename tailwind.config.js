@@ -44,5 +44,17 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".marker": {
+          "&::marker": {
+            display: "inline-flex",
+            alignItems: "center",
+          },
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
