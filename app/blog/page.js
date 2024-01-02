@@ -4,7 +4,7 @@ import React from "react";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import BlogPreview from "@/components/BlogPreview";
 import TellUs from "@/components/TellUs";
-import { futureOfWeb } from "@/data/blogData";
+import { futureOfWeb, dailyTask } from "@/data/blogData";
 
 const page = () => {
   return (
@@ -39,7 +39,7 @@ const page = () => {
           <BlogPreview blogData={futureOfWeb} />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-24">
-          <BlogPreview blogData={futureOfWeb} />
+          <BlogPreview blogData={dailyTask} />
         </div>
       </section>
       <section className="max-sm:pt-20 pt-30 max-sm:pb-20 pb-40">

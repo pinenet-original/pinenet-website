@@ -40,16 +40,16 @@ export const futureOfWeb = {
 };
 export const dailyTask = {
   recomended: true,
-  id: "future-of-web-development",
-  date: "April 6, 2023",
-  title: "The Future of Web Development: \nOur Predictions for 2023",
-  author: "Marius Dainys",
-  position: "Worker of PinetNet",
-  link: "blog/future-of-web-development",
+  id: "daily-task",
+  date: "May 6, 2024",
+  title: "Interneto svetainių kūrimo ateitis: \nMūsų prognozės 2024 metams",
+  author: "Goga Vino",
+  position: "Content Specialist",
+  link: "blog/daily-task",
   authorImg:
-    "https://scontent.fvno5-1.fna.fbcdn.net/v/t31.18172-8/288653_253126238049909_4313524_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=b9145c&_nc_ohc=AFYYtQisj6sAX_BfdF4&_nc_ht=scontent.fvno5-1.fna&oh=00_AfDAkdN90W13qoVccHpwx-dt4bqc_msGovEE3mGsyWb08Q&oe=65A377E8",
+    "https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kkZiaB9Q-GbY5gjf6WWURzEpLzNrpjZp_tn09GB21bI=",
   previewText: [
-    "Let’s explore the latest trends in web development, and regurgitate some predictions we read on Twitter for how they will shape the industry in the coming year.",
+    "Panagrinėkime naujausias žiniatinklio svetainių kūrimo tendencijas ir išsakykime keletą prognozių, kurias perskaitėme 'Twitter', apie tai, kaip jos formuos pramonę ateinančiais metais.",
   ],
   articles: [
     {
