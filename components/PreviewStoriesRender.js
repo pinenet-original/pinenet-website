@@ -3,7 +3,7 @@ import AnimatedDiv from "./AnimatedDiv";
 import Image from "next/image";
 import Link from "next/link";
 
-export const storiesDataStorieRender = ({ storiesData }) => {
+export const PreviewStoriesRender = ({ storiesData }) => {
   return (
     <AnimatedDiv>
       <div className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
@@ -66,4 +66,4 @@ export const storiesDataStorieRender = ({ storiesData }) => {
     </AnimatedDiv>
   );
 };
-export default storiesDataStorieRender;
+export default PreviewStoriesRender;
