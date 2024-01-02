@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import AnimatedDiv from "@/components/AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import Link from "next/link";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -13,7 +13,7 @@ const page = () => {
       <section className="pb-12 xl:pb-2  max-sm:pb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
           <div className="mx-auto max-w-full lg:max-w-none">
-            <AnimatedDiv>
+            <FadeIn transitionDelay={0} animationSpeed={0.5}>
               <span className="block font-display text-base font-semibold text-neutral-950 mb-6">
                 Contact us
               </span>
@@ -23,7 +23,7 @@ const page = () => {
               <div className="mb-16 max-w-3xl text-xl text-neutral-600 flex gap-3 flex-col">
                 <p className="mb-10">We can’t wait to hear from you.</p>
               </div>
-            </AnimatedDiv>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -32,7 +32,7 @@ const page = () => {
           <div className="mx-auto max-w-full lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
               <div className="lg:order-last">
-                <AnimatedDiv>
+                <FadeIn transitionDelay={0.3} animationSpeed={0.5}>
                   <form>
                     <h2 className="font-display text-base font-semibold text-neutral-950 mb-6">
                       Work inquiries
@@ -149,9 +149,9 @@ const page = () => {
                       </span>
                     </button>
                   </form>
-                </AnimatedDiv>
+                </FadeIn>
               </div>
-              <AnimatedDiv>
+              <FadeIn transitionDelay={0.3} animationSpeed={0.5}>
                 <h2 className="font-display text-base font-semibold text-neutral-950">
                   Our offices
                 </h2>
@@ -225,7 +225,7 @@ const page = () => {
                     </Link>
                   </li>
                 </ul>
-              </AnimatedDiv>
+              </FadeIn>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import AnimatedDiv from "@/components/AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import ImageClip from "@/components/ImageClip";
 import TellUs from "@/components/TellUs";
 
@@ -17,7 +17,7 @@ const page = () => {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-114 md:pt-26">
             <div className="mx-auto max-w-full lg:max-w-none">
-              <AnimatedDiv>
+              <FadeIn transitionDelay={0} animationSpeed={0.5}>
                 <div>
                   <span className="block font-display text-base font-semibold text-neutral-950 mb-6">
                     Our process
@@ -34,7 +34,7 @@ const page = () => {
                     developing for the past decade.
                   </p>
                 </div>
-              </AnimatedDiv>
+              </FadeIn>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const page = () => {
                 <ImageClip ImageLink={ImageLink2} />
               </div>
               <div className="px-5 lg:w-[40rem]">
-                <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
+                <FadeIn transitionDelay={0} animationSpeed={0.5}>
                   <div className="pt-10 group-first:pt-0">
                     <div className="font-display mb-2 text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950">
                       01
@@ -109,7 +109,7 @@ const page = () => {
                       </li>
                     </ul>
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </div>
             </div>
             <div className="mb-24 flex max-lg:flex-col max-lg:items-center lg:gap-8 max-w-7xl mx-auto">
@@ -117,7 +117,7 @@ const page = () => {
                 <ImageClip ImageLink={ImageLink} />
               </div>
               <div className="px-5 order-1 max-lg:order-2">
-                <AnimatedDiv>
+                <FadeIn transitionDelay={0} animationSpeed={0.5}>
                   <div className="pt-10 group-first:pt-0">
                     <div className="font-display mb-2 text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950">
                       02
@@ -162,7 +162,7 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </div>
             </div>
             <div className="flex max-lg:flex-col max-lg:items-center lg:gap-6 max-w-7xl mx-auto">
@@ -170,7 +170,7 @@ const page = () => {
                 <ImageClip ImageLink={ImageLink} />
               </div>
               <div className="px-5 order-2 max-lg:order-1">
-                <AnimatedDiv>
+                <FadeIn transitionDelay={0} animationSpeed={0.5}>
                   <div className="pt-10 group-first:pt-0">
                     <div className="font-display mb-2 text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950">
                       03
@@ -218,7 +218,7 @@ const page = () => {
                       </h3>
                       <ul role="list" className="text-sm text-neutral-600 mt-8">
                         <li className="group mt-10 first:mt-0">
-                          <AnimatedDiv>
+                          <FadeIn transitionDelay={0} animationSpeed={0.5}>
                             <div className="pt-10 group-first:pt-0 ">
                               <strong className="font-semibold text-neutral-950">
                                 Web development.{" "}
@@ -227,10 +227,10 @@ const page = () => {
                               marketing pages. The rest of the website will be a
                               shell that uses lorem ipsum everywhere.
                             </div>
-                          </AnimatedDiv>
+                          </FadeIn>
                         </li>
                         <li className="group mt-10 first:mt-0">
-                          <AnimatedDiv delay={0.2}>
+                          <FadeIn transitionDelay={0.2} animationSpeed={0.5}>
                             <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
                               <strong className="font-semibold text-neutral-950">
                                 Application development.{" "}
@@ -239,10 +239,10 @@ const page = () => {
                               experts in the latest app frameworks, like Angular
                               1 and Google Web Toolkit.
                             </div>
-                          </AnimatedDiv>
+                          </FadeIn>
                         </li>
                         <li className="group mt-10 first:mt-0">
-                          <AnimatedDiv delay={0.3}>
+                          <FadeIn transitionDelay={0.3} animationSpeed={0.5}>
                             <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
                               <strong className="font-semibold text-neutral-950">
                                 E-commerce.{" "}
@@ -252,12 +252,12 @@ const page = () => {
                               to the Shopify store template we’ve used for the
                               past six years.
                             </div>
-                          </AnimatedDiv>
+                          </FadeIn>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </div>
             </div>
           </div>
@@ -266,7 +266,7 @@ const page = () => {
       <section className="max-sm:pt-16 pt-12 max-sm:pb-20 pb-10">
         <div className="relative isolate bg-neutral-50 py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <AnimatedDiv>
+            <FadeIn transitionDelay={0} animationSpeed={0.5}>
               <div className="mx-auto max-w-2xl lg:max-w-none mb-24">
                 <div className="max-w-2xl">
                   <div className="mb-6">
@@ -288,13 +288,13 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </AnimatedDiv>
+            </FadeIn>
             <ul
               role="list"
               className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3"
             >
               <li className="text-base text-neutral-600 before:bg-neutral-950 after:bg-neutral-100">
-                <AnimatedDiv>
+                <FadeIn transitionDelay={0} animationSpeed={0.5}>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
                       Meticulous.
@@ -303,10 +303,10 @@ const page = () => {
                     put your logo in our template. The second step is getting
                     them to do the colors.
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </li>
               <li className="text-base text-neutral-600 before:bg-neutral-950 after:bg-neutral-100">
-                <AnimatedDiv delay={0.1}>
+                <FadeIn transitionDelay={0.1} animationSpeed={0.5}>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
                       Efficient.
@@ -314,10 +314,10 @@ const page = () => {
                     We pride ourselves on never missing a deadline which is easy
                     because most of the work was done years ago.
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </li>
               <li className="text-base text-neutral-600 before:bg-neutral-950 after:bg-neutral-100">
-                <AnimatedDiv delay={0.2}>
+                <FadeIn transitionDelay={0.2} animationSpeed={0.5}>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
                       Adaptable.
@@ -325,10 +325,10 @@ const page = () => {
                     Every business has unique needs and our greatest challenge
                     is shoe-horning those needs into something we already built.
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </li>
               <li className="text-base text-neutral-600 before:bg-neutral-950 after:bg-neutral-100">
-                <AnimatedDiv delay={0.3}>
+                <FadeIn transitionDelay={0.3} animationSpeed={0.5}>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
                       Honest.
@@ -336,10 +336,10 @@ const page = () => {
                     We are transparent about all of our processes, banking on
                     the simple fact our clients never actually read anything.
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </li>
               <li className="text-base text-neutral-600 before:bg-neutral-950 after:bg-neutral-100">
-                <AnimatedDiv delay={0.4}>
+                <FadeIn transitionDelay={0.4} animationSpeed={0.5}>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
                       Loyal.
@@ -348,10 +348,10 @@ const page = () => {
                     beyond just delivering a product, allowing us to invoice
                     them for decades.
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </li>
               <li className="text-base text-neutral-600 before:bg-neutral-950 after:bg-neutral-100">
-                <AnimatedDiv delay={0.5}>
+                <FadeIn transitionDelay={0.5} animationSpeed={0.5}>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
                       Innovative.
@@ -360,7 +360,7 @@ const page = () => {
                     we. We are constantly on the lookout for new open source
                     projects to clone.
                   </div>
-                </AnimatedDiv>
+                </FadeIn>
               </li>
             </ul>
           </div>

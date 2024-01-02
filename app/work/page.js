@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import AnimatedDiv from "@/components/AnimatedDiv";
+import { FadeIn } from "@/utils/animations";
 import Image from "next/image";
 import TellUs from "@/components/TellUs";
 import CompaniesListData from "@/data/ComapniesListData";
@@ -17,7 +17,7 @@ const Work = () => {
     <div className="w-full flex-auto">
       <section className="pt-20 max-sm:pt-10 pb-20 max-sm:pb-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <AnimatedDiv>
+          <FadeIn transitionDelay={0} animationSpeed={0.5}>
             <h2>
               <span className="mb-6 block font-display text-base font-semibold text-neutral-950">
                 Our work
@@ -35,16 +35,16 @@ const Work = () => {
                 past decade.
               </p>
             </div>
-          </AnimatedDiv>
+          </FadeIn>
         </div>
       </section>
       <section className="pt-20 max-sm:pt-10 pb-20 max-sm:pb-10 mx-auto">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-24">
-          <AnimatedDiv>
+          <FadeIn transitionDelay={0} animationSpeed={0.5}>
             <h1 className="text-2xl font-semibold text-neutral-950 mb-10">
               Case studies
             </h1>
-          </AnimatedDiv>
+          </FadeIn>
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-24">
           <PrieviewStoriesRender storiesData={dimaStoriesData} />
@@ -58,7 +58,7 @@ const Work = () => {
       </section>
       <section className="pt-20 pb-20 max-sm:pb-10">
         <div className="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 px-6 lg:px-8">
-          <AnimatedDiv>
+          <FadeIn transitionDelay={0} animationSpeed={0.5}>
             <div className="mx-auto max-w-4xl">
               <blockquote className=" mb-10 relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
                 <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
@@ -80,16 +80,16 @@ const Work = () => {
                 />
               </div>
             </div>
-          </AnimatedDiv>
+          </FadeIn>
         </div>
       </section>
       <section className="max-sm:pt-20 pt-40 max-sm:pb-20 pb-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <AnimatedDiv>
+          <FadeIn transitionDelay={0} animationSpeed={0.5}>
             <h2 className="mb-10 font-display text-2xl font-semibold text-neutral-950">
               You’re in good company
             </h2>
-          </AnimatedDiv>
+          </FadeIn>
           <div className=" relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px"></div>
           <ul className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4">
             {CompaniesListData.map((logo, index) => (

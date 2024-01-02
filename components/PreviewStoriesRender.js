@@ -1,11 +1,11 @@
 import React from "react";
-import AnimatedDiv from "./AnimatedDiv";
+import { FadeIn } from "../utils/animations";
 import Image from "next/image";
 import Link from "next/link";
 
 export const storiesDataStorieRender = ({ storiesData }) => {
   return (
-    <AnimatedDiv>
+    <FadeIn transitionDelay={0} animationSpeed={0.5}>
       <div className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
         <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
           <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
@@ -63,7 +63,7 @@ export const storiesDataStorieRender = ({ storiesData }) => {
           </div>
         </div>
       </div>
-    </AnimatedDiv>
+    </FadeIn>
   );
 };
 export default storiesDataStorieRender;

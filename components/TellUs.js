@@ -1,12 +1,12 @@
 import React from "react";
-import AnimatedDiv from "./AnimatedDiv";
+import { FadeIn } from "../utils/animations";
 import Link from "next/link";
 
 const TellUs = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
       <div className="mx-auto max-w-2xl lg:max-w-none">
-        <AnimatedDiv style={{ opacity: 1, transform: "none" }}>
+        <FadeIn transitionDelay={0} animationSpeed={0.5}>
           <div className="-mx-6 rounded-[40px] bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
             <div className="mx-auto max-w-4xl">
               <div className="max-w-xl">
@@ -43,7 +43,7 @@ const TellUs = () => {
               </div>
             </div>
           </div>
-        </AnimatedDiv>
+        </FadeIn>
       </div>
     </div>
   );
