@@ -8,6 +8,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Navigation = ({ toggleManager }) => {
   const { showNavigation } = useContext(PageContext);
+
   return (
     <header
       className="absolute top-0 left-0 overflow-hiden bg-neutral-950 pt-2 mx-auto"
@@ -33,6 +34,7 @@ const Navigation = ({ toggleManager }) => {
                       ? "text-black duration-[900ms]"
                       : "text-white"
                   } z-50`}
+                  onClick={() => toggleManager()}
                 >
                   <Logo opened={showNavigation} />
                 </Link>
